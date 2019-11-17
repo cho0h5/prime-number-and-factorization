@@ -1,6 +1,7 @@
 import sys
 
-limit = int(sys.argv[1])
+#limit = int(sys.argv[1])
+limit = 10
 
 count = 1
 primeList = [2]
