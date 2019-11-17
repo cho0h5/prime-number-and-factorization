@@ -18,7 +18,7 @@ func main() {
 	startTime := time.Now()
 
 	for count < limit {
-		for j := range primeList {
+		for _, j := range primeList {
 			if (i % j) == 0 {
 				flag = false
 				break
