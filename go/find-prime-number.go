@@ -27,6 +27,7 @@ func main() {
 
 		if flag {
 			primeList = append(primeList, i)
+			//fmt.Println(primeList)
 			count += 1
 		}
 

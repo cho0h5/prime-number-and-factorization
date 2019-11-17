@@ -30,8 +30,8 @@ int main(int argc, char *argv[]) {
         flag = 1;
     }
 
-    printf("time : %f\n", (float)(clock() - startTime));
-    printf("%d\n", primeList[count]);
+    printf("time : %f\n", (float)((clock() - startTime))/CLOCKS_PER_SEC);
+    printf("%d\n", primeList[count-1]);
 
     return 0;
 }
