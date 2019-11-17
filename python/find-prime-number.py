@@ -1,13 +1,16 @@
 import sys
+import time
 
 limit = int(sys.argv[1])
 #limit = 10
 
 count = 1
 primeList = [2]
-print(primeList)
+#print(primeList)
 i = 3
 flag = True
+
+startTime = time.time()
 
 while count < limit:
     for j in primeList:
@@ -17,8 +20,11 @@ while count < limit:
 
     if flag:
         primeList.append(i)
-        print(primeList)
+        #print(primeList)
         count += 1
         
     i += 2
     flag = True
+
+print("time :", time.time() - startTime)
+print(primeList[len(primeList)-1])
