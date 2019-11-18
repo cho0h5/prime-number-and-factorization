@@ -19,11 +19,15 @@ int main(int argc, char *argv[]) {
 
     while(count < limit) {
         int j;
-        for(j = count + 1; primeList[j] != 0; j++) {}
+        for(j = count + 1; primeList[j] == 0; j++) {
+	}
+            printf("%d\n", j);
+	if(j > SIZE) {
+            break;
+	}
         for(int k = 0; k < SIZE; k += j) {
             primeList[k] = 0;
 	}
-
     }
 
     printf("time : %f\n", (float)((clock() - startTime))/CLOCKS_PER_SEC);
