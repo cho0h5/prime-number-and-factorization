@@ -14,6 +14,7 @@ func main() {
 	primeList := []int{2}
 	i := 3
 	flag := true
+	fmt.Println(count)
 
 	startTime := time.Now()
 
@@ -29,6 +30,7 @@ func main() {
 			primeList = append(primeList, i)
 			//fmt.Println(primeList)
 			count += 1
+			fmt.Println(count)
 		}
 
 		i += 2

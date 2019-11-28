@@ -7,9 +7,10 @@ int main(int argc, char *argv[]) {
     long limit = atol(argv[1]);
 
     int count = 1;
-    int primeList[100000] = {2};
+    int primeList[1000000] = {2};
     int i = 3;
     int flag = 1;
+    printf("%d\n", count);
 
     clock_t startTime = clock();
 
@@ -24,6 +25,7 @@ int main(int argc, char *argv[]) {
         if(flag) {
             primeList[count] = i;
             count += 1;
+            printf("%d\n", count);
         }
 
         i += 2;

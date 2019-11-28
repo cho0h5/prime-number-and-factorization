@@ -9,6 +9,7 @@ primeList = [2]
 #print(primeList)
 i = 3
 flag = True
+print(count)
 
 startTime = time.time()
 
@@ -22,6 +23,7 @@ while count < limit:
         primeList.append(i)
         #print(primeList)
         count += 1
+        print(count)
         
     i += 2
     flag = True
